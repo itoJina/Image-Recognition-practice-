@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #4bbe5c; /* モスグリーン */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .center-box {
+            background-color: white;
+            border-radius: 20px; /* 角を丸く */
+            padding: 20px;
+            text-align: center;
+        }
+        .center-box button {
+            margin-top: 20px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+  <div class="center-box">
+  <h2>画像をアップロードしてください</h2>
+  <form action="/" method="post" enctype="multipart/form-data">
+  学習用画像: <input type="file" name="file1" id="file1" onchange="previewImage(this, 'preview1')"><br>
+  <img id="preview1" src="" /><br>
+  検索対象画像: <input type="file" name="file2" id="file2" onchange="previewImage(this, 'preview2')"><br>
+  <img id="preview2" src="" /><br>
+  <input type="submit" value="Submit" style="width: 200px; height: 50px; font-size: 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">
+  </form>
+  </div>
+  <script>
+  function previewImage(input, previewId) {
+  if (input.files && input.files[0]) {
+  var reader = new FileReader();
+  reader.onload = function(e) {
+  document.getElementById(previewId).src = e.target.result;
+  }
+  reader.readAsDataURL(input.files[0]);
+  }
+  }
+  </script>
+  </body>
+  </html>
+</html>

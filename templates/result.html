@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: #4bbe5c; /* モスグリーン */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            .center-box {
+                background-color: white;
+                border-radius: 20px; /* 角を丸く */
+                padding: 20px;
+                text-align: center;
+            }
+            .center-box button {
+                margin-top: 20px;
+                padding: 10px 20px;
+            }
+        </style>
+    </head>
+<body>
+    <div class="center-box">
+        <h2>画像を処理しました。</h2>
+        {% for filename in filenames %}
+            <img src="{{ url_for('static', filename=filename) }}" alt="Processed image" /><br>
+        {% endfor %}
+        <a href="/">トップに戻る</a>
+    </div>
+</body>
+</html>
