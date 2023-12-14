@@ -6,8 +6,8 @@
 app.pyをコードエディター上でrunさせると使用可能。
 
 ## イメージ
-<img src="https://github.com/itoJina/Image-Recognition-practice-/assets/74310455/4080ef44-7915-4bfe-8813-4092e1d13633" width:200px>
-<img src="https://github.com/itoJina/Image-Recognition-practice-/assets/74310455/77793cfb-4d82-4b43-863f-33dade22696c" width:100px>
+<img src="https://github.com/itoJina/Image-Recognition-practice-/assets/74310455/4080ef44-7915-4bfe-8813-4092e1d13633" width:10%>
+<img src="https://github.com/itoJina/Image-Recognition-practice-/assets/74310455/77793cfb-4d82-4b43-863f-33dade22696c" width:10%>
 
 
 ## 概要
